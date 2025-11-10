@@ -27,7 +27,7 @@ st.markdown(
 )
 
 # --- Remove Streamlit default upload cap when self-hosting
-st.runtime.scriptrunner.add_script_run_ctx  # keeps compatibility
+#st.runtime.scriptrunner.add_script_run_ctx  # keeps compatibility
 st.session_state.setdefault("upload_limit", 1024)  # in MB
 st.write(f"🔼 Current upload size limit: **{st.session_state.upload_limit} MB**")
 
